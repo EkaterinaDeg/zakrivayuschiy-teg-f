@@ -174,29 +174,6 @@
 }
 
 @media (width >= 375px) {
-  .header__logo {
-    font-size: min(calc(100vi / 7), 49px);
-  }
+ 
 
-  .card__image-watermark {
-    inset-block-start: 25px;
-    inset-inline-end: 13px;
-  }
-
-  .save-button {
-    flex-direction: column;
-    inline-size: 310px;
-    block-size: 84px;
-    gap: 8px;
-  }
-
-  .floppy-icon {
-  block-size: 28px;
-  inline-size: 28px;
-  }
-
-  .modal-icon {
-    block-size: 39px;
-    inline-size: 39px;
-   }
 }
