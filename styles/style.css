@@ -225,16 +225,6 @@
   outline: var(--outline-main);
 }
 
-.floppy {
-  width: 28px;
-}
-
-.floppy, 
-.floppy-dialog { 
-  z-index: 2; 
-  fill: var(--fill-floppy); 
-}
-
 .button:focus { 
   outline: none; 
   box-shadow: 2px 2px 0 var(--accent-color); 
@@ -266,17 +256,25 @@
   transform: scaleX(1);
 }
 
+svg {
+  flex-shrink: 0;
+}
+
+.floppy {
+  width: 28px;
+}
+
 .button__text,
 .floppy,
 .floppy-dialog {
   position: relative;
   mix-blend-mode: difference;
+  color: var(--accent-color-text);
   z-index: 2;
 }
 
-.floppy,
 .floppy-dialog {
-  fill: var(--accent-color-text);
+  width: 39px;
 }
 
 .main-body {
@@ -351,10 +349,6 @@ dialog:not([open]) {
   inset: 0;
 }
 
-.floppy-dialog {
-  width: 5.635rem;
-}
-
 .dialog {
   display: flex;
   padding: 30px 42px;
@@ -407,10 +401,6 @@ dialog::backdrop {
   }
 
   svg.floppy  {
-    transform: scale(1.18);
-  }
-
-  svg.floppy-dialog  {
-    transform: scale(0.953);
+    width: 21px;
   }
 }
