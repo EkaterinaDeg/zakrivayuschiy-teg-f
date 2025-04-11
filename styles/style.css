@@ -233,7 +233,7 @@
 }
 
 .like-icon:focus {
-  border: none;
+  outline: 1px solid transparent;
 }
 
 .button {
