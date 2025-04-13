@@ -215,6 +215,7 @@
 
 .save {
   margin: auto;
+  text-wrap: nowrap;
   inline-size: 19.125rem;
   padding-block-start: 15px;
   padding-block-end: 15px;
@@ -223,6 +224,7 @@
   max-block-size: 80px;
   gap: 8px;
   margin-top: 50px;
+  margin-bottom: 100px;
   outline: var(--outline-main);
 }
 
