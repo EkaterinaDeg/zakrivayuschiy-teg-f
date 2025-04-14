@@ -237,8 +237,7 @@
   gap: 8px;
   margin-top: 52px;
   margin-bottom: 100px;
-  border: 0;
-  outline: var(--outline-main);
+  border: var(--outline-main);
 }
 
 .button:focus { 
