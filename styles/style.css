@@ -198,22 +198,27 @@
 
 .card__icon-button {
   display: flex;
-  block-size: 38px;
   flex-wrap: wrap;
-  inline-size: 38px;
+  inline-size: 39px;
   block-size: 38px;
   align-items: center;
   justify-content: center;
   align-content: center;
   background-color: transparent;
-  border: 0px;
+  outline: 0;
+  border: 0;
 }
 
-.like-icon {
-  display: flex;
+svg.like-icon {
+  display: grid;
   position: relative;
-  align-self: center;
-  inline-size: 38px;
+  transform: scale(0.94);
+  background-size: cover;
+  background-attachment: fixed;
+  outline: 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
 .card__like-button {
@@ -249,8 +254,13 @@
   transition: box-shadow 0.3s ease;
 }
 
-.like-icon:focus {
-  outline: 1px solid transparent;
+.card__icon-button:focus {
+  outline: 0;
+}
+
+.card__icon-button:focus-visible {
+  border: 2px solid #000;
+  transition: border 0.3s ease;
 }
 
 .button {
