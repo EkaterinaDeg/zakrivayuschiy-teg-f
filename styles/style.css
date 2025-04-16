@@ -112,36 +112,36 @@
   aspect-ratio: 1 / 1;
 }
 
-.card_list li:nth-of-type(1) img {
+.filter-grayscale img {
   filter: grayscale(0.7);
 }
 
-.card_list li:nth-of-type(2) img {
+.filter-opacity img {
   filter: opacity(0.8);
 }
 
-.card_list li:nth-of-type(2) img {
+.filter-mix img {
   filter: invert(0.7) contrast(1) brightness(100%);
 } 
 
-.card_list li:nth-of-type(4) img {
+.filter-contrast img {
   filter: contrast(20%);
 }
 
-.card_list li:nth-of-type(5) img {
+.filter-invert img {
   
   filter: invert(0.7);
 }
 
-.card_list li:nth-of-type(6) img {
+.filter-sepia img {
   filter: sepia(80%);
 }
 
-.card_list li:nth-of-type(7) img {
+.filter-blur img {
   filter: blur(0.2rem);
 }
 
-.card_list li:nth-of-type(8) img {
+.filter-hue-rotate img {
   filter: hue-rotate(0.5turn);
 }
 
@@ -152,7 +152,6 @@
   position: absolute;
   inset-inline-end: clamp(0.75rem, 0.4859rem + 1.1268vw, 1.5rem);
   inset-block-start: clamp(1.5rem, 1.4778rem + 0.0946vw, 1.563rem);
-  -webkit-text-stroke: 1px var(--background-color);
   text-shadow:
   -1px 0 var(--background-color), 
   0 1px var(--background-color), 
@@ -170,13 +169,12 @@
   }
 }
 
-.card_list li:nth-of-type(7) label {
+.filter-blur label {
   text-wrap: nowrap;
 }
 
 .card_text {
-  padding: var(--padding-text);
-  letter-spacing: 0.1px; /*добавлено для переноса, как в макете*/
+  padding: var(--padding-text); 
   line-height: var(--line-height-text);
   border-block-start: var(--outline-main);
 }
@@ -243,13 +241,16 @@ svg.like-icon {
   border: var(--outline-main);
 }
 
+.button {
+  transition: box-shadow 0.3s ease;
+}
+
 .button:focus { 
   outline: none; 
 }
 
 .button:focus-visible {
   box-shadow: 2px 2px 0 var(--accent-color); 
-  transition: box-shadow 0.3s ease;
 }
 
 .card__icon-button:focus {
