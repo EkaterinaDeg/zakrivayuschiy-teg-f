@@ -198,9 +198,10 @@
 
 .card__icon-button {
   display: flex;
+  padding: 0;
   flex-wrap: wrap;
-  inline-size: 39px;
-  block-size: 38px;
+  width: 39px;
+  height: 38px;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -212,9 +213,6 @@
 svg.like-icon {
   display: grid;
   position: relative;
-  transform: scale(0.94);
-  background-size: cover;
-  background-attachment: fixed;
   outline: 0;
   justify-content: center;
   align-items: center;
